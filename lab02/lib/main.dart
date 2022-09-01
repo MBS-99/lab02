@@ -21,7 +21,6 @@ class MyApp2 extends StatelessWidget {
                         fit: BoxFit.cover,
                         image: NetworkImage(
                             "https://pediatriccenterofroundrock.com/wp-content/uploads/2014/08/baby.jpg"))),
-                width: 200,
                 height: 200,
               ),
               Center(
@@ -32,15 +31,17 @@ class MyApp2 extends StatelessWidget {
                     ),
                     Card(
                       //I tried to make a border like this
-                      shape: StadiumBorder(side: BorderSide(color: Colors.red)),
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(color: Colors.yellow, width: 4.0)),
                       child: Text(
-                        "BABY      ",
+                        " BABY ",
                         style: TextStyle(fontSize: 25, color: Colors.grey),
                       ),
                     ),
                     Card(
-                      shape: StadiumBorder(side: BorderSide(color: Colors.red)),
-                      child: Text("2 MONTHS    ",
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(color: Colors.red, width: 4.0)),
+                      child: Text(" 2 MONTHS ",
                           style:
                               TextStyle(fontSize: 25, color: Colors.lightBlue)),
                     ),
@@ -67,13 +68,17 @@ class MyApp2 extends StatelessWidget {
                       width: 0,
                     ),
                     Card(
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(color: Colors.yellow, width: 4.0)),
                       child: Text(
-                        "BABY    ",
+                        " BABY ",
                         style: TextStyle(fontSize: 25, color: Colors.grey),
                       ),
                     ),
                     Card(
-                      child: Text("2 MONTHS    ",
+                      shape: RoundedRectangleBorder(
+                          side: BorderSide(color: Colors.red, width: 4.0)),
+                      child: Text(" 2 MONTHS ",
                           style:
                               TextStyle(fontSize: 25, color: Colors.lightBlue)),
                     ),
